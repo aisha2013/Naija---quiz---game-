@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Umar-Nana-Aisha Website</title>
+<style>
+body {
+  background-color: #F0F0F0;
+  text-align: center;
+  font-family: Arial, Roboto, sans-serif;
+  padding: 50px;
+}
+h1 { color: gold; }
+h2 { color: indigo; text-align: center; }
+a { color: silver; text-decoration: none; display: inline-block; }
+button {
+  background-color: pink;
+  color: blue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+.card {
+  background: purple;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+@media (max-width: 600px) {
+  h1 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<h1>Hello, this is Umar-Nana-Aisha's website</h1>
+<p>I build and create websites</p>
+
+<ul>
+  <li>I help build websites</li>
+  <li>Want your company to grow</li>
+  <li>Then you are in the right place</li>
+  <li>Welcome to Umar-Nana-Aisha's website</li>
+  <li>I can help you build & create websites</li>
+  <li>Contact me on WhatsApp</li>
+</ul>
+
+<div class="card">
+  <h2>Get in touch with me</h2>
+  <p>Ready to start your website? Send me a message!</p>
+  <form action="https://formspree.io/f/maywkrl" method="POST">
+    <input type="text" name="name" placeholder="Your name" required><br><br>
+    <input type="email" name="email" placeholder="Your email" required><br><br>
+    <textarea name="message" placeholder="Tell me about your website..." required></textarea><br><br>
+    <button type="submit">Send message</button>
+  </form>
+</div>
+
+<button onclick="talk()">Make Page Talk</button>
+<br><br>
+<img src="https://picsum.photos/200" width="200">
+<br>
+<a href="https://wa.me/234812329033">Chat me on WhatsApp</a>
+
+<script>
+function talk() {
+  let message = new SpeechSynthesisUtterance("Hello, welcome to Umar Nana Aisha's website");
+  speechSynthesis.speak(message);
+}
+</script>
+
+</body>
+</html>
